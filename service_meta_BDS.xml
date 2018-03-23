@@ -1,0 +1,2782 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<application id="BDS">
+	<service id="BDS.ZT.LIANGZI" description="练习"
+		class_id="LZTRAINService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="LIANGZI" name="IN_BDS_LIANGZI" camel_alias="IN_BDS_LIANGZI"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="LIANGZI" name="OUT_BDS_LIANGZI" camel_alias="OUT_BDS_LIANGZI"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELLIANGZI" description="删除练习"
+		class_id="LZTRAINDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="LIANGZI" name="IN_XT_DEL_LIANGZI" camel_alias="IN_XT_DEL_LIANGZI"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.ADDLIANGZI" description="添加练习"
+		class_id="LZTRAINADDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="LIANGZI" name="IN_XT_ADD_LIANGZI" camel_alias="IN_XT_ADD_LIANGZI"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XGLIANGZI" description="修改练习"
+		class_id="LZTRAINXGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="LIANGZI" name="IN_XT_XG_LIANGZI" camel_alias="IN_XT_XG_LIANGZI"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXYCTQ" description="聚类边界信息任务列表"
+		class_id="XSFXYCTQService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLBJXXRW" name="IN_BDS_XSFX_JLBJXXRW"
+				camel_alias="IN_BDS_XSFX_JLBJXXRW" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_JLBJXXRW" name="OUT_BDS_XSFX_JLBJXXRW"
+				camel_alias="OUT_BDS_XSFX_JLBJXXRW" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.MLFLOWCASEID" description="机器学习流程实例标示"
+		class_id="MLFLOWCASEIDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW_CASE" name="IN_T_BDS_MLFLOW_CASE"
+				camel_alias="IN_T_BDS_MLFLOW_CASE" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLFLOW_CASE" name="OUT_T_BDS_MLFLOW_CASE"
+				camel_alias="OUT_T_BDS_MLFLOW_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXNEW" description="获取最新聚类算法任务"
+		class_id="QDJLRWXXNEWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXLIST" camel_alias="IN_BDS_QDJLRWXXLIST"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_RWXX" name="OUT_BDS_QDJLRWXXLIST" camel_alias="OUT_BDS_QDJLRWXXLIST"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXFIRST" description="聚类算法任务列表"
+		class_id="QDJLRWXXFIRSTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXFIRST" camel_alias="IN_BDS_QDJLRWXXFIRST"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_RWXX" name="OUT_BDS_QDJLRWXXFIRST" camel_alias="OUT_BDS_QDJLRWXXFIRST"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXDSJRWJLSEL" description="线损分析大数据任务记录查询"
+		class_id="XSFXDSJRWJLSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_DSJRWJL" name="IN_XSFX_DSJRWJL" camel_alias="IN_XSFX_DSJRWJL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_DSJRWJL" name="OUT_XSFX_DSJRWJL" camel_alias="OUT_XSFX_DSJRWJL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXRWXXUPD" description="修改聚类算法"
+		class_id="XSFXRWXXUPDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_XSFXRWXXUPD" camel_alias="IN_BDS_XSFXRWXXUPD"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXRWXXLIST" description="获取全部聚类算法任务"
+		class_id="XSFXRWXXLISTService!com.haiyisoft.service.IBusinessService">
+		<output>
+			<param id="XSFX_RWXX" name="OUT_BDS_XSFXRWXXLIST" camel_alias="OUT_BDS_XSFXRWXXLIST"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXKPFXXSEL" description="线损分析k评分信息"
+		class_id="XSFXKPFXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLXX" name="IN_BDS_XSFXKPFXXSEL" camel_alias="IN_BDS_XSFXKPFXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_JLXX" name="OUT_BDS_XSFXKPFXXSEL" camel_alias="OUT_BDS_XSFXKPFXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.PTZJRESULT" description="实时线损平台组件查询"
+		class_id="PTZJRESULTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQXSJSJG" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQXSJSJG" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.BJTQXSJSJG" description="边界分析数据选择"
+		class_id="XSFXDSJRWJLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQXSJSJG" name="IN_XSFX_TQXSJSJG" camel_alias="IN_XSFX_TQXSJSJG"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQXSJSJG" name="OUT_XSFX_TQXSJSJG" camel_alias="OUT_XSFX_TQXSJSJG"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.JLBJXXRWINSERT" description="添加聚类边界信息任务"
+		class_id="JLBJXXRWINSERTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLBJXXRW" name="IN_XSFX_JLBJXXRW" camel_alias="IN_XSFX_JLBJXXRW"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXJLBJXXRW" description="边界分析数据运算情况"
+		class_id="XSFXJLBJXXRWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLBJXXRW" name="IN_XSFX_JLBJXXRW" camel_alias="IN_XSFX_JLBJXXRW"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_JLBJXXRW" name="OUT_XSFX_JLBJXXRW" camel_alias="OUT_XSFX_JLBJXXRW"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.YDLXDMSEL" description="查询用电类型"
+		class_id="YDLXDMSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XT_DMBM" name="IN_BDS_YDLXDMSEL" camel_alias="IN_BDS_YDLXDMSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XT_DMBM" name="OUT_BDS_YDLXDMSEL" camel_alias="OUT_BDS_YDLXDMSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXYCFXFF" description="查询台区画像的异常分析方法"
+		class_id="XSFXTQHXYCFXFFService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXYCFXFF" name="IN_XSFX_TQHXYCFXFF"
+				camel_alias="IN_XSFX_TQHXYCFXFF" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQHXYCFXFF" name="OUT_XSFX_TQHXYCFXFF"
+				camel_alias="OUT_XSFX_TQHXYCFXFF" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXSAVE" description="保存画像信息"
+		class_id="XSFXTQHXSAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHX" name="IN_XSFX_TQHX" camel_alias="IN_XSFX_TQHX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXTQXSYYFX" description="查询台区线损原因分析结果"
+		class_id="XSFXTQXSYYFXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQXSYYFX" name="IN_XSFX_TQXSYYFX" camel_alias="IN_XSFX_TQXSYYFX"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQXSYYFX" name="OUT_XSFX_TQXSYYFX" camel_alias="OUT_XSFX_TQXSYYFX"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXQYXSJK" description="线损分析展示"
+		class_id="XSFXQYXSJKService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_QYXSJK" name="IN_XSFX_QYXSJK" camel_alias="IN_XSFX_QYXSJK"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_QYXSJK" name="OUT_XSFX_QYXSJK" camel_alias="OUT_XSFX_QYXSJK"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXQSXSJK" description="线损分析统计信息查询"
+		class_id="XSFXQSXSJKService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_QSXSJK" name="IN_XSFX_QSXSJK" camel_alias="IN_XSFX_QSXSJK"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_QSXSJK" name="OUT_XSFX_QSXSJK" camel_alias="OUT_XSFX_QSXSJK"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHX" description="台区画像信息查询"
+		class_id="XSFXTQHXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHX" name="IN_XSFX_TQHX" camel_alias="IN_XSFX_TQHX"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQHX" name="OUT_XSFX_TQHX" camel_alias="OUT_XSFX_TQHX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXYCTQSB" description="台区异常信息查询"
+		class_id="XSFXYCTQSBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_YCTQSB" name="IN_XSFX_YCTQSB" camel_alias="IN_XSFX_YCTQSB"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_YCTQSB" name="OUT_XSFX_YCTQSB" camel_alias="OUT_XSFX_YCTQSB"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXYCYHSB" description="异常用户信息查询"
+		class_id="XSFXYCYHSBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_YCYHSB" name="IN_XSFX_YCYHSB" camel_alias="IN_XSFX_YCYHSB"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_YCYHSB" name="OUT_XSFX_YCTQSB" camel_alias="OUT_XSFX_YCTQSB"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQXSYC" description="异常预测台区信息查询"
+		class_id="XSFXTQXSYCService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQXSYC" name="IN_XSFX_TQXSYC" camel_alias="IN_XSFX_TQXSYC"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQXSYC" name="OUT_XSFX_TQXSYC" camel_alias="OUT_XSFX_TQXSYC"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQXSJK" description="异常台区信息查询"
+		class_id="XSFXTQXSJKService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQXSJK" name="IN_XSFX_TQXSJK" camel_alias="IN_XSFX_TQXSJK"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQXSJK" name="OUT_XSFX_TQXSJK" camel_alias="OUT_XSFX_TQXSJK"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXYCTQ" description="台区离群信息查询"
+		class_id="XSFXTQHXYCTQService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXYCTQ" name="IN_XSFX_TQHXYCTQ" camel_alias="IN_XSFX_TQHXYCTQ"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQHXYCTQ" name="OUT_XSFX_TQHXYCTQ" camel_alias="OUT_XSFX_TQHXYCTQ"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDPHRWXXDEL" description="删除渠道偏好任务"
+		class_id="QDPHRWXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDPH_RWXX" name="IN_BDS_DFYCRWXXDEL" camel_alias="IN_BDS_QDPHRWXXDEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDPHRWXXINS" description="添加渠道偏好任务"
+		class_id="QDPHRWXXINSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDPH_RWXX" name="IN_BDS_QDPHRWXXINS" camel_alias="IN_BDS_QDPHRWXXINS"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDPHRWXXUPD" description="修改渠道偏好任务"
+		class_id="QDPHRWXXUPDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDPH_RWXX" name="IN_BDS_QDPHRWXXUPD" camel_alias="IN_BDS_QDPHRWXXUPD"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDDQKHXXSEL" description="查询渠道偏好地区信息"
+		class_id="QDDQKHXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDDQ_KHXX" name="IN_BDS_QDDQKHXXSEL" camel_alias="IN_BDS_QDDQKHXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDDQ_KHXX" name="OUT_BDS_QDDQKHXXSEL" camel_alias="OUT_BDS_QDDQKHXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDDQKHXXDEL" description="删除渠道偏好地区信息"
+		class_id="QDDQKHXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDDQ_KHXX" name="IN_BDS_QDDQKHXXDEL" camel_alias="IN_BDS_QDDQKHXXDEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDPHRWXXLIST" description="渠道偏好任务列表"
+		class_id="QDPHRWXXLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDPH_RWXX" name="IN_BDS_QDPHRWXXLIST" camel_alias="IN_BDS_QDPHRWXXLIST"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDPH_RWXX" name="OUT_BDS_QDPHRWXXLIST" camel_alias="OUT_BDS_QDPHRWXXLIST"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJXJXZSSEL" description="查询渠道业务绩效指数"
+		class_id="QDJXJXZSSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJX_JXZS" name="IN_BDS_QDJXJXZSSEL" camel_alias="IN_BDS_QDJXJXZSSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJX_JXZS" name="OUT_BDS_QDJXJXZSSEL" camel_alias="OUT_BDS_QDJXJXZSSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDPHYHHYDSEL" description="查询渠道用户活跃度"
+		class_id="QDPHYHHYDSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJX_YHHYD" name="IN_BDS_QDPHYHHYDSEL" camel_alias="IN_BDS_QDPHYHHYDSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJX_YHHYD" name="OUT_BDS_QDPHYHHYDSEL" camel_alias="OUT_BDS_QDPHYHHYDSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJXFWZLSEL" description="查询渠道服务总量"
+		class_id="QDJXFWZLSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJX_FWZL" name="IN_BDS_QDJXFWZLSEL" camel_alias="IN_BDS_QDJXFWZLSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJX_FWZL" name="OUT_BDS_QDJXFWZLSEL" camel_alias="OUT_BDS_QDJXFWZLSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJXYWZBSEL" description="查询渠道业务占比"
+		class_id="QDJXYWZBSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJX_YWZB" name="IN_BDS_QDJXYWZBSEL" camel_alias="IN_BDS_QDJXYWZBSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJX_YWZB" name="OUT_BDS_QDJXYWZBSEL" camel_alias="OUT_BDS_QDJXYWZBSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJXDFHSLSEL" description="查询渠道电费回收率"
+		class_id="QDJXDFHSLSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJX_DFHSL" name="IN_BDS_QDJXDFHSLSEL" camel_alias="IN_BDS_QDJXDFHSLSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJX_DFHSL" name="OUT_BDS_QDJXDFHSLSEL" camel_alias="OUT_BDS_QDJXDFHSLSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJXQDKTLSEL" description="查询渠道开通率"
+		class_id="QDJXQDKTLSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJX_QDKTL" name="IN_BDS_QDJXQDKTLSEL" camel_alias="IN_BDS_QDJXQDKTLSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJX_QDKTL" name="OUT_BDS_QDJXQDKTLSEL" camel_alias="OUT_BDS_QDJXQDKTLSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RKXTCZRKBIGTABLE" description="查询人口照片信息"
+		class_id="RKXTBIGTABLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_BIGTABLE" name="IN_T_BDS_BIGTABLE"
+				camel_alias="IN_T_BDS_BIGTABLE" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RKXTCZRKJBXX" description="查询常住人口信息"
+		class_id="RKXTCZRKJBXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="RKXT_CZRK_JBXX" name="IN_RKXT_CZRK_JBXX"
+				camel_alias="IN_RKXT_CZRK_JBXX" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="RKXT_CZRK_JBXX" name="OUT_RKXT_CZRK_JBXX"
+				camel_alias="OUT_RKXT_CZRK_JBXX" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.BZHXJG" description="查询重点关注人员标准画像结果表"
+		class_id="BZHXJGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLE" name="IN_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_BZHX_JG" name="OUT_ZDGZRY_BZHX_JG"
+				camel_alias="OUT_ZDGZRY_BZHX_JG" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.TABLELIST" description="查询公安数据"
+		class_id="GLGZMODELRESULTLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="IN_SYS_PAGE" camel_alias="IN_SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="OUT_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="OUT_GLGZ_MODEL_RESULT_TABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="OUT_SYS_PAGE" camel_alias="OUT_SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.TABLESIZE" description="查询公安数据总条数"
+		class_id="GLGZMODELRESULTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="OUT_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="OUT_GLGZ_MODEL_RESULT_TABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELETEORACLE" description="删除资源库"
+		class_id="DELETEORACLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_T_BDS_RESOURCELIB"
+				camel_alias="IN_T_BDS_RESOURCELIB" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.RESOURCEDETAIL" description="添加库表"
+		class_id="SOUTABLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_T_BDS_RESOURCELIB"
+				camel_alias="IN_T_BDS_RESOURCELIB" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.ORACLETABLE" description="库表"
+		class_id="ORACLETABLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGTABLE" name="IN_T_BDS_DATAMININGTABLE"
+				camel_alias="IN_T_BDS_DATAMININGTABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGTABLE" name="OUT_T_BDS_DATAMININGTABLE"
+				camel_alias="OUT_T_BDS_DATAMININGTABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SOUMLMODELS" description="更新或者新增模型"
+		class_id="SOUMLMODELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+
+	<service id="BDS.FINDMODELDATA" description="查询模型对应节点的信息"
+		class_id="FINDMODELDATAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MODELPOINT" name="OUT_T_BDS_MLMODEL"
+				camel_alias="OUT_T_BDS_MLMODEL" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLKPFXXSELS" description="查询k评分信息"
+		class_id="QDJLKPFXXSELSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLMODEL" name="OUT_T_BDS_MLMODEL" camel_alias="OUT_T_BDS_MLMODEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+
+	<service id="BDS.ZT.SMLPOINTS" description="查找流程特定内容"
+		class_id="SMLPOINTSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLPOINT" name="IN_T_BDS_MLPOINT" camel_alias="IN_T_BDS_MLPOINT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLPOINT" name="OUT_T_BDS_MLPOINT" camel_alias="OUT_T_BDS_MLPOINT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+
+	<service id="BDS.ZT.KZSX" description="扩展属性管理"
+		class_id="KZSXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_KZSX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_KZSX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ORASVR_HT_FENJUPER120130824" description="getSortedGj"
+		class_id="ORASVR_HT_FENJUPER120130824Service!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.YTZYK_WB_ZSSF" description="getSortedGj"
+		class_id="YTZYK_WB_ZSSFService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.GlgzModelResultView" description="getGlgzItemListByIdCard"
+		class_id="GlgzModelResultViewService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_T_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_T_GLGZ_MODEL_RESULT_TABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="OUT_T_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="OUT_T_GLGZ_MODEL_RESULT_TABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZdgzryBzhxYs" description="getHxItemListByType"
+		class_id="ZdgzryBzhxYsService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZdgzryGlgzZh" description="getGlgzItemListByType"
+		class_id="ZdgzryGlgzZhService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_BZHX_JG" description="getHxJgById"
+		class_id="ZDGZRY_BZHX_JGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_BZHX_JG" name="IN_T_ZDGZRY_BZHX_JG"
+				camel_alias="IN_T_ZDGZRY_BZHX_JG" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_BZHX_JG" name="OUT_T_ZDGZRY_BZHX_JG"
+				camel_alias="OUT_T_ZDGZRY_BZHX_JG" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_GLGZ_JG" description="getHxJgById"
+		class_id="ZDGZRY_GLGZ_JGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_GLGZ_JG" name="IN_T_ZDGZRY_GLGZ_JG"
+				camel_alias="IN_T_ZDGZRY_GLGZ_JG" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_GLGZ_JG" name="OUT_T_ZDGZRY_GLGZ_JG"
+				camel_alias="OUT_T_ZDGZRY_GLGZ_JG" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.GLGZ_MODEL_RESULT_TABLE" description="getGlgzJgById"
+		class_id="GLGZ_MODEL_RESULT_TABLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_T_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_T_GLGZ_MODEL_RESULT_TABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="OUT_T_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="OUT_T_GLGZ_MODEL_RESULT_TABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_BZHX_XZ" description="geActualProperty"
+		class_id="ZDGZRY_BZHX_XZService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_BZHX_XZ" name="IN_T_ZDGZRY_BZHX_XZ"
+				camel_alias="IN_T_ZDGZRY_BZHX_XZ" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_BZHX_XZ" name="OUT_T_ZDGZRY_BZHX_XZ"
+				camel_alias="OUT_T_ZDGZRY_BZHX_XZ" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_GLGZ_GXR" description="geActualProperty"
+		class_id="ZDGZRY_GLGZ_GXRService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_GLGZ_ZH" description="geActualProperty"
+		class_id="ZDGZRY_GLGZ_ZHService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_GLGZ_ZH" name="IN_T_ZDGZRY_GLGZ_ZH"
+				camel_alias="IN_T_ZDGZRY_GLGZ_ZH" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_GLGZ_ZH" name="OUT_T_ZDGZRY_GLGZ_ZH"
+				camel_alias="OUT_T_ZDGZRY_GLGZ_ZH" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_BZHX_YS" description="geActualProperty"
+		class_id="ZDGZRY_BZHX_YSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_BZHX_YS" name="IN_T_ZDGZRY_BZHX_YS"
+				camel_alias="IN_T_ZDGZRY_BZHX_YS" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_BZHX_YS" name="OUT_T_ZDGZRY_BZHX_YS"
+				camel_alias="OUT_T_ZDGZRY_BZHX_YS" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZdryZb1" description="geActualProperty"
+		class_id="ZdryZb1Service!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_GLGZ_MODEL_RESULT_TABLES"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLES" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZdryZb2" description="geActualProperty"
+		class_id="ZdryZb2Service!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_GLGZ_MODEL_RESULT_TABLES"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLES" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="ORASVR_HT_FENJUPER120130824" name="IN_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="IN_T_ORASVR_HT_FENJUPER120130824" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="ORASVR_HT_FENJUPER120130824" name="OUT_T_ORASVR_HT_FENJUPER120130824"
+				camel_alias="OUT_T_ORASVR_HT_FENJUPER120130824" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDGZRY_QH_ZB" description="geActualProperty"
+		class_id="ZDGZRY_QH_ZBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_QH_ZB" name="IN_T_ZDGZRY_QH_ZB" camel_alias="IN_T_ZDGZRY_QH_ZB"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_QH_ZB" name="OUT_T_ZDGZRY_QH_ZB" camel_alias="OUT_T_ZDGZRY_QH_ZB"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.GLGZ_JG" description="geActualProperty"
+		class_id="GLGZ_JGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDGZRY_GLGZ_JG" name="IN_T_ZDGZRY_GLGZ_JG"
+				camel_alias="IN_T_ZDGZRY_GLGZ_JG" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDGZRY_GLGZ_JG" name="OUT_T_ZDGZRY_GLGZ_JG"
+				camel_alias="OUT_T_ZDGZRY_GLGZ_JG" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RKXTRKZPXX" description="查询人员头像"
+		class_id="RKXTRKZPXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_R_SFXX" name="IN_T_BDS_R_SFXX" camel_alias="IN_T_BDS_R_SFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QUGAMATHRESULT" description="MAC信息查询"
+		class_id="QUGAMATHRESULTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GA_MATH_RESULT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="ADDR_ANALYZER" name="IN_BDS" camel_alias="IN_BDS"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="GA_MATH_RESULT" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.TIMEQUGADATALIST" description="详情时间信息查询"
+		class_id="TIMEQUGADATALISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ADDR_ANALYZER" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="GA_DATA_LIST" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="GA_DATA_LIST" name="OUT_COUNT" camel_alias="OUT_COUNT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+
+	<service id="BDS.ZT.DATAMININGFLOWHISTORY" description="数据处理流程实例管理"
+		class_id="DATAMININGFLOWHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWM" description="数据处理流程管理"
+		class_id="DATAMININGFLOWMService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELDATAMININGFLOWHISTORY" description="删除数据处理流程实例"
+		class_id="DELDATAMININGFLOWHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_XT_I_SERVICE"
+				camel_alias="IN_XT_I_SERVICE" num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DELDATAMININGPOINT" description="删除节点"
+		class_id="DELDATAMININGPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_XT_I_SERVICE"
+				camel_alias="IN_XT_I_SERVICE" num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.FLOWTREE" description="加载左侧树"
+		class_id="FLOWTREEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_CELLLIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_CELLLIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINT" description="T_BDS_DATAMININGPOINT"
+		class_id="DATAMININGPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTB" description="OR条件"
+		class_id="DATAMININGPOINTBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTC" description="OR条件"
+		class_id="DATAMININGPOINTCService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOW" description="T_BDS_DATAMININGFLOW"
+		class_id="DATAMININGFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTSAVE" description="保存信息"
+		class_id="DATAMININGPOINTSAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.FLOWTREEP" description="加载各个节点"
+		class_id="FLOWTREEPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_CELLLIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_CELLLIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTA" description="节点"
+		class_id="DATAMININGPOINTAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RESOURCELIB" description="资源库管理"
+		class_id="RESOURCELIBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RESOURCELIBA" description="获取页面上资源库信息"
+		class_id="RESOURCELIBAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.KB" description="库表"
+		class_id="KBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.KBZD" description="库表字段"
+		class_id="KBZDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.KBZDLX" description="库表字段"
+		class_id="KBZDLXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDYSQL" description="自定义SQL"
+		class_id="ZDYSQLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDYSQLCOL" description="自定义SQL列"
+		class_id="ZDYSQLCOLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTALL" description="获取全部信息"
+		class_id="DATAMININGPOINTALLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.PKID" description="前台获取pkid"
+		class_id="PKIDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTCONTENT" description="获取CONTENT"
+		class_id="DATAMININGPOINTCONTENTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWSAVE" description="保存流程信息"
+		class_id="DATAMININGFLOWSAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWCOPY" description="复制流程信息并保存"
+		class_id="DATAMININGFLOWCOPYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWALL" description="获取全部信息"
+		class_id="DATAMININGFLOWALLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	lizhao
+	<service id="BDS.ZT.QDJLRWXXALL" description="获取详情"
+		class_id="QDJLRWXXALLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJL_RWXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJL_RWXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWCLOB" description="查询大字段"
+		class_id="DATAMININGFLOWCLOBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGPOINTCONTENTS" description="获取CONTENT"
+		class_id="DATAMININGPOINTCONTENTSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVEDATAMININGFLOWHISTORY" description="保存流程信息到history"
+		class_id="SAVEDATAMININGFLOWHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.UPDATEDATAMININGFLOWHISTORY" description="更新流程信息到history"
+		class_id="UPDATEDATAMININGFLOWHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SAVEDATAMININGPOINTHISTORY" description="保存pointhistory信息"
+		class_id="SAVEDATAMININGPOINTHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWHISTORYALL" description="获取TBdsDataminingflowHistory全部信息"
+		class_id="DATAMININGFLOWHISTORYALLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SFXX" description="查询算法信息"
+		class_id="SFXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.USER" description="获取用户信息"
+		class_id="USERService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SFMXBQ" description="获取算法的相关信息"
+		class_id="SFMXBQService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DM" description="加载DM_ZIP中的所有数据"
+		class_id="DMService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DM_ZIP" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DM_ZIP" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DMZIPBLOB" description="查询大字段"
+		class_id="DMZIPBLOBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DM_ZIP" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVEDMZIP" description="保存流程信息到DMZIP"
+		class_id="SAVEDMZIPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DM_ZIP" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SFXXBLOB" description="查询大字段"
+		class_id="SFXXBLOBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVESFXX" description="保存算法信息"
+		class_id="SAVESFXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SAVESFXXA" description="保存算法信息无blob"
+		class_id="SAVESFXXAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<!-- <param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB" 
+				num_min="1" num_max="1" datatype="SIMPLE" /> -->
+		</input>
+	</service>
+	<service id="BDS.ZT.SFXXB" description="查询算法信息,%"
+		class_id="SFXXBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.COUNT" description="统计count"
+		class_id="COUNTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SJYZD" description="查询sjyzd"
+		class_id="SJYZDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SJYZD" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SJYZD" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SFRW" description="查询SFRW"
+		class_id="SFRWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFRW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFRW" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.UPDATERW" description="更新sfrw"
+		class_id="UPDATERWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFRW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XX" description="查询算法信息"
+		class_id="XXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XXA" description="查询算法信息"
+		class_id="XXAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.WJRW" description="查询DSJWJ_WJRW"
+		class_id="WJRWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_WJRW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_WJRW" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.WJMX" description="DSJWJ_WJMX"
+		class_id="WJMXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_WJMX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_WJMX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SJYZDA" description="算法包中查询sjyzd"
+		class_id="SJYZDAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SJYZD" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SJYZD" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.JLRWZS" description="算法包中查询JLRWZS"
+		class_id="JLRWZSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_JLRWZS" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_JLRWZS" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.JLXX" description="算法包中查询JLXX"
+		class_id="JLXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_JLXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_JLXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.CXX" description="算法包中查询CXX"
+		class_id="CXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_CXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_CXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.CXXCLOB" description="查询CXX中的大字段"
+		class_id="CXXCLOBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.UPDATECXX" description="更新cxx表，有blob类型的字段"
+		class_id="UPDATECXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_CXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.UPDATEJLXX" description="更新jlxx表，有blob类型的字段"
+		class_id="UPDATEJLXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_JLXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_ZT_CLOB" camel_alias="IN_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.CXXC" description="jsp中查询复杂sql"
+		class_id="CXXCService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_CXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_CXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.HISTORY" description="jsp中查询复杂sql"
+		class_id="HISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+
+	<service id="BDS.ZT.DATAMININGFLOWHISTORYJ" description="jsp中查询"
+		class_id="DATAMININGFLOWHISTORYJService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVESJYZD" description="保存SJYZD"
+		class_id="SAVESJYZDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SJYZD" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SAVESFRW" description="保存SFRW"
+		class_id="SAVESFRWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFRW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWFLOW" description="数值分析流程展示"
+		class_id="DATAMININGSHOWFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW" name="IN_T_BDS_DATAMININGSHOWFLOW"
+				camel_alias="IN_T_BDS_DATAMININGSHOWFLOW" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGSHOWFLOW" name="OUT_T_BDS_DATAMININGSHOWFLOW"
+				camel_alias="OUT_T_BDS_DATAMININGSHOWFLOW" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="Text" name="OUT_T_BDS_DATAMININGSHOWFLOW_CONTENT"
+				camel_alias="OUT_T_BDS_DATAMININGSHOWFLOW_CONTENT" num_min="1"
+				num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELETEDATAMININGSHOWFLOW" description="删除数值分析流程"
+		class_id="DELETEDATAMININGSHOWFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW" name="IN_T_BDS_DELETEDATAMININGSHOWFLOW"
+				camel_alias="IN_T_BDS_DELETEDATAMININGSHOWFLOW" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWFLOWCASE" description="数值分析流程实例展示"
+		class_id="DATAMININGSHOWFLOWCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW_CASE" name="IN_T_BDS_DATAMININGSHOWFLOW_CASE"
+				camel_alias="IN_T_BDS_DATAMININGSHOWFLOW_CASE" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGSHOWFLOW_CASE" name="OUT_T_BDS_DATAMININGSHOWFLOW_CASE"
+				camel_alias="OUT_T_BDS_DATAMININGSHOWFLOW_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELETEDATAMININGSHOWFLOWCASE" description="删除数值分析流程实例"
+		class_id="DELETEDATAMININGSHOWFLOWCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW_CASE" name="IN_T_BDS_DELETEDATAMININGSHOWFLOW_CASE"
+				camel_alias="IN_T_BDS_DELETEDATAMININGSHOWFLOW_CASE" num_min="0"
+				num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWPOINTCASE" description="数值分析数据可视化展示"
+		class_id="DATAMININGSHOWPOINTCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWPOINT_CASE" name="IN_T_BDS_DATAMININGSHOWPOINT_CASE"
+				camel_alias="IN_T_BDS_DATAMININGSHOWPOINT_CASE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGSHOWPOINT_CASE" name="OUT_T_BDS_DATAMININGSHOWPOINT_CASE"
+				camel_alias="OUT_T_BDS_DATAMININGSHOWPOINT_CASE" num_min="0"
+				num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWPOINTCASESAVE" description="数值分析数据CASE保存"
+		class_id="DATAMININGSHOWPOINTCASESAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWPOINT_CASE" name="IN_T_BDS_DATAMININGSHOWPOINT_CASE_SAVE"
+				camel_alias="IN_T_BDS_DATAMININGSHOWPOINT_CASE_SAVE" num_min="0"
+				num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWPOINT" description="数值分析节点POINT"
+		class_id="DATAMININGSHOWPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWPOINT" name="IN_T_BDS_DATAMININGSHOWPOINT"
+				camel_alias="IN_T_BDS_DATAMININGSHOWPOINT" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGSHOWPOINT" name="OUT_T_BDS_DATAMININGSHOWPOINT"
+				camel_alias="OUT_T_BDS_DATAMININGSHOWPOINT" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWPOINTINSERT" description="数值分析节点POINT插入"
+		class_id="DATAMININGSHOWPOINTINSERTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWPOINT" name="IN_T_BDS_DATAMININGSHOWPOINTINSERT"
+				camel_alias="IN_T_BDS_DATAMININGSHOWPOINTINSERT" num_min="0"
+				num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWFLOWINSERT" description="数值分析流程插入"
+		class_id="DATAMININGSHOWFLOWINSERTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW" name="IN_T_BDS_DATAMININGSHOWFLOWINSERT"
+				camel_alias="IN_T_BDS_DATAMININGSHOWFLOWINSERT" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="Text" name="IN_T_BDS_DATAMININGSHOWFLOWINSERT_CLOB"
+				camel_alias="IN_T_BDS_DATAMININGSHOWFLOWINSERT_CLOB" num_min="1"
+				num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWPOINTSAVE" description="数值分析流程节点POINT保存"
+		class_id="DATAMININGSHOWPOINTSAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWPOINT" name="IN_T_BDS_DATAMININGSHOWPOINTSAVE"
+				camel_alias="IN_T_BDS_DATAMININGSHOWPOINTSAVE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DELETEDATAMININGSHOWPOINT" description="删除数值分析流程节点POINT"
+		class_id="DELETEDATAMININGSHOWPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWPOINT" name="IN_T_BDS_DELETEDATAMININGSHOWPOINT"
+				camel_alias="IN_T_BDS_DELETEDATAMININGSHOWPOINT" num_min="0"
+				num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGFLOWSELECTOR" description="数值分析流程选择"
+		class_id="DATAMININGFLOWSELECTORService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_T_BDS_DATAMININGFLOWSELECTOR"
+				camel_alias="IN_T_BDS_DATAMININGFLOWSELECTOR" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW" name="OUT_T_BDS_DATAMININGFLOWSELECTOR"
+				camel_alias="OUT_T_BDS_DATAMININGFLOWSELECTOR" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RELATIONTABLE" description="数值分析关系表"
+		class_id="RELATIONTABLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RELATIONTABLE" name="IN_T_BDS_RELATIONTABLE"
+				camel_alias="IN_T_BDS_RELATIONTABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RELATIONTABLE" name="OUT_T_BDS_RELATIONTABLE"
+				camel_alias="OUT_T_BDS_RELATIONTABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RSFXX" description="R算法信息"
+		class_id="RSFXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_R_SFXX" name="IN_T_BDS_RSFXX" camel_alias="IN_T_BDS_RSFXX"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_R_SFXX" name="OUT_T_BDS_RSFXX" camel_alias="OUT_T_BDS_RSFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RSFXXSAVE" description="保存R算法信息"
+		class_id="RSFXXSAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_R_SFXX" name="IN_T_BDS_RSFXX" camel_alias="IN_T_BDS_RSFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWCONTENT" description="获取数值分析的CONTENT"
+		class_id="DATAMININGSHOWCONTENTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW" name="IN_T_BDS_DATAMININGSHOWCONTENT"
+				camel_alias="IN_T_BDS_DATAMININGSHOWCONTENT" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_T_BDS_DATAMININGSHOWCONTENT"
+				camel_alias="OUT_T_BDS_DATAMININGSHOWCONTENT" num_min="1" num_max="1"
+				datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGSHOWFLOWCASESAVE" description="数值分析流程实例保存"
+		class_id="DATAMININGSHOWFLOWCASESAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGSHOWFLOW_CASE" name="IN_T_BDS_DATAMININGSHOWFLOW_CASE"
+				camel_alias="IN_T_BDS_DATAMININGSHOWFLOW_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="Text" name="IN_T_BDS_DATAMININGSHOWFLOW_CASE_CONTENT"
+				camel_alias="IN_T_BDS_DATAMININGSHOWFLOW_CASE_CONTENT" num_min="1"
+				num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.CUSTOMSQLQUERY" description="自定义SQL查询"
+		class_id="CUSTOMSQLQUERYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_BIGTABLE" name="IN_T_BDS_BIGTABLE"
+				camel_alias="IN_T_BDS_BIGTABLE" num_min="1" num_max="1" datatype="TAB" />
+			<!-- <param id="Text" name="IN_T_BDS_BIGTABLE" camel_alias="IN_T_BDS_BIGTABLE" 
+				num_min="1" num_max="1" datatype="SIMPLE" /> -->
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_R_SFXX" name="OUT_T_BDS_R_SFXX" camel_alias="OUT_T_BDS_R_SFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.CUSTOMSQLQUERYZDYCXCXJG" description="自定义SQL查询ZDYCXCXJG"
+		class_id="CUSTOMSQLQUERYZDYCXCXJGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_BIGTABLE" name="IN_T_BDS_BIGTABLE"
+				camel_alias="IN_T_BDS_BIGTABLE" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="ZDYCX_CXJG" name="OUT_T_ZDYCX_CXJG" camel_alias="OUT_T_ZDYCX_CXJG"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.CUSTOMSQLQUERYMULTITABLE" description="自定义SQL查询多表联合"
+		class_id="CUSTOMSQLQUERYMULTITABLEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_BIGTABLE" name="IN_T_BDS_BIGTABLE"
+				camel_alias="IN_T_BDS_BIGTABLE" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.ZDYCXCXJG" description="ZDYCXCXJG查询"
+		class_id="ZDYCXCXJGService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ZDYCX_CXJG" name="IN_ZDYCX_CXJG" camel_alias="IN_ZDYCX_CXJG"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ZDYCX_CXJG" name="OUT_ZDYCX_CXJG" camel_alias="OUT_ZDYCX_CXJG"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DSJWJSFRW" description="大数据挖掘算法任务保存"
+		class_id="DSJWJSFRWSAVEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFRW" name="IN_DSJWJ_SFRW" camel_alias="IN_DSJWJ_SFRW"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.CUSTOMQUERYA" description="算法选择加载数据源"
+		class_id="CUSTOMQUERYAService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_BIGTABLE" name="IN_T_BDS_BIGTABLE"
+				camel_alias="IN_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.LOADFOUNDERBYBS" description="根据创建人标识获取创建人名称"
+		class_id="LOADFOUNDERBYBSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_BIGTABLE" name="IN_T_BDS_BIGTABLE"
+				camel_alias="IN_T_BDS_BIGTABLE" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.TESTCLOB" description="测试CLOB"
+		class_id="TESTCLOBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVER" description="保存R算法信息"
+		class_id="SAVERService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="Text" name="IN_SFTP" camel_alias="IN_SFTP" num_min="1"
+				num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_R_SFXX" name="IN_T_BDS_R_SFXX" camel_alias="IN_T_BDS_R_SFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SAVERZIP" description="保存R算法压缩包"
+		class_id="SAVERZIPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_ZIPCONTENT" camel_alias="IN_ZIPCONTENT"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_R_ZIP" name="IN_T_BDS_R_ZIP" camel_alias="IN_T_BDS_R_ZIP"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.RZIP" description="查询R算法压缩包"
+		class_id="RZIPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_R_ZIP" name="IN_T_BDS_R_ZIP" camel_alias="IN_T_BDS_R_ZIP"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_R_ZIP" name="OUT_T_BDS_R_ZIP" camel_alias="OUT_T_BDS_R_ZIP"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="OUT_R_ZIP_CONTENT" camel_alias="OUT_R_ZIP_CONTENT"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QUERYRSFTP" description="查询R算法图片"
+		class_id="QUERYRSFTPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_R_SFXX" name="IN_T_BDS_R_SFXX" camel_alias="IN_T_BDS_R_SFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVEMLZIP" description="保存机器学习算法压缩包"
+		class_id="SAVEMLZIPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_ZIPCONTENT" camel_alias="IN_ZIPCONTENT"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_ML_ZIP" name="IN_T_BDS_ML_ZIP" camel_alias="IN_T_BDS_ML_ZIP"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.MLZIP" description="查询机器学习算法压缩包"
+		class_id="MLZIPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_ML_ZIP" name="IN_T_BDS_ML_ZIP" camel_alias="IN_T_BDS_ML_ZIP"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_ML_ZIP" name="OUT_T_BDS_ML_ZIP" camel_alias="OUT_T_BDS_ML_ZIP"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="OUT_ML_ZIP_CONTENT" camel_alias="OUT_ML_ZIP_CONTENT"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SAVEML" description="保存机器学习算法信息"
+		class_id="SAVEMLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="Text" name="IN_SFTP" camel_alias="IN_SFTP" num_min="1"
+				num_max="1" datatype="SIMPLE" />
+			<param id="T_BDS_ML_SFXX" name="IN_T_BDS_ML_SFXX" camel_alias="IN_T_BDS_ML_SFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.MLSFXX" description="查询机器学习算法信息"
+		class_id="MLSFXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_ML_SFXX" name="IN_T_BDS_ML_SFXX" camel_alias="IN_T_BDS_ML_SFXX"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_ML_SFXX" name="OUT_T_BDS_ML_SFXX" camel_alias="OUT_T_BDS_ML_SFXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.LOADFOUNDERBYBSML" description="根据创建人标识获取创建人名称机器学习"
+		class_id="LOADFOUNDERBYBSMLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="Text" name="IN_CUSTOMSQL" camel_alias="IN_CUSTOMSQL"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+		<output>
+			<param id="T_BDS_BIGTABLE" name="OUT_T_BDS_BIGTABLE"
+				camel_alias="OUT_T_BDS_BIGTABLE" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.MLFLOW" description="机器学习流程展示"
+		class_id="MLFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_MLFLOW" name="IN_T_BDS_MLFLOW" camel_alias="IN_T_BDS_MLFLOW"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_MLFLOW" name="OUT_T_BDS_MLFLOW" camel_alias="OUT_T_BDS_MLFLOW"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.MLFLOWCASE" description="机器学习流程实例展示"
+		class_id="MLFLOWCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_MLFLOW_CASE" name="IN_T_BDS_MLFLOW_CASE"
+				camel_alias="IN_T_BDS_MLFLOW_CASE" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_MLFLOW_CASE" name="OUT_T_BDS_MLFLOW_CASE"
+				camel_alias="OUT_T_BDS_MLFLOW_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.MLMODEL" description="机器学习模型流程展示"
+		class_id="MLMODELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLMODEL" name="OUT_T_BDS_MLMODEL" camel_alias="OUT_T_BDS_MLMODEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.MLMODELCASE" description="机器学习模型实例展示"
+		class_id="MLMODELCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL_CASE" name="IN_T_BDS_MLMODELCASE"
+				camel_alias="IN_T_BDS_MLMODELCASE" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLMODEL_CASE" name="OUT_T_BDS_MLMODELCASE"
+				camel_alias="OUT_T_BDS_MLMODELCASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	LIZHAOGAI
+	<service id="BDS.ZT.QDJLRWXX" description="平台演示查询演示"
+		class_id="QDJLRWXXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJL_RWXX" name="IN_BDS_QDJLRWXX" camel_alias="IN_BDS_QDJLRWXX"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJL_RWXX" name="OUT_BDS_QDJLRWXX" camel_alias="OUT_BDS_QDJLRWXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.GLGZMRT" description="平台演示风险人员维护"
+		class_id="GLGZMRTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_BDS_GLGZMRT"
+				camel_alias="IN_BDS_GLGZMRT" num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="OUT_BDS_GLGZMRT"
+				camel_alias="OUT_BDS_GLGZMRT" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELETEGLGZMRT" description="删除风险人员"
+		class_id="DELETEGLGZMRTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.GLGZMRTDETAIL" description="更新或者新增风险人员"
+		class_id="GlgzMRTdetailService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="GLGZ_MODEL_RESULT_TABLES" name="IN_GLGZ_MODEL_RESULT_TABLE"
+				camel_alias="IN_GLGZ_MODEL_RESULT_TABLE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DELETEMLFLOW" description="删除机器学习流程"
+		class_id="DELETEMLFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW" name="IN_T_BDS_MLFLOW" camel_alias="IN_T_BDS_MLFLOW"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DELETEMLFLOWCASE" description="删除机器学习流程实例"
+		class_id="DELETEMLFLOWCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW_CASE" name="IN_T_BDS_MLFLOWCASE"
+				camel_alias="IN_T_BDS_MLFLOWCASE" num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DELETEMLMODEL" description="删除机器学习模型"
+		class_id="DELETEMLMODELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DELETEMLMODELCASE" description="删除机器学习模型实例"
+		class_id="DELETEMLMODELCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL_CASE" name="IN_T_BDS_MLMODELCASE"
+				camel_alias="IN_T_BDS_MLMODELCASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.MLPOINT" description="删除流程节点"
+		class_id="MLPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLPOINT" name="IN_T_BDS_MLPOINT" camel_alias="IN_T_BDS_MLPOINT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.MODELPOINT" description="删除模型节点"
+		class_id="MODELPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MODELPOINT" name="IN_T_BDS_MODELPOINT"
+				camel_alias="IN_T_BDS_MODELPOINT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SMLPOINT" description="查找流程特定内容"
+		class_id="SMLPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLPOINT" name="IN_T_BDS_MLPOINT" camel_alias="IN_T_BDS_MLPOINT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLPOINT" name="OUT_T_BDS_MLPOINT" camel_alias="OUT_T_BDS_MLPOINT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SMODELPOINT" description="查找模型特定内容"
+		class_id="SMODELPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MODELPOINT" name="IN_T_BDS_MODELPOINT"
+				camel_alias="IN_T_BDS_MODELPOINT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MODELPOINT" name="OUT_T_BDS_MODELPOINT"
+				camel_alias="OUT_T_BDS_MODELPOINT" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.CMLFLOW" description="创建机器学习流程"
+		class_id="CMLFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW" name="IN_T_BDS_MLFLOW" camel_alias="IN_T_BDS_MLFLOW"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.UMLFLOW" description="更新机器学习流程"
+		class_id="UMLFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW" name="IN_T_BDS_MLFLOW" camel_alias="IN_T_BDS_MLFLOW"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SAVEMLMODEL" description="更新或者新增机器学习模型"
+		class_id="SAVEMLMODELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SDATAMININGFLOW" description="查找当前流程"
+		class_id="SDATAMININGFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_DATAMININGFLOW" name="IN_T_BDS_DATAMININGFLOW"
+				camel_alias="IN_T_BDS_DATAMININGFLOW" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="T_BDS_DATAMININGFLOW" name="OUT_T_BDS_DATAMININGFLOW"
+				camel_alias="OUT_T_BDS_DATAMININGFLOW" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="Text" name="OUT_BDS_ZT_CLOB" camel_alias="OUT_BDS_ZT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SOUMLFLOW" description="更新或者新增流程"
+		class_id="SOUMLFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW" name="IN_T_BDS_MLFLOW" camel_alias="IN_T_BDS_MLFLOW"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUMLMODEL" description="更新或者新增模型"
+		class_id="SOUMLMODELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL" name="IN_T_BDS_MLMODEL" camel_alias="IN_T_BDS_MLMODEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUMODELPOINT" description="更新或者新增模型节点"
+		class_id="SOUMODELPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MODELPOINT" name="IN_T_BDS_MODELPOINT"
+				camel_alias="IN_T_BDS_MODELPOINT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUMLPOINT" description="更新或者新增流程节点"
+		class_id="SOUMLPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLPOINT" name="IN_T_BDS_MLPOINT" camel_alias="IN_T_BDS_MLPOINT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SDATAMININGPOINT" description="查找数值分析结果"
+		class_id="SDATAMININGPOINTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT" name="IN_T_BDS_DATAMININGPOINT"
+				camel_alias="IN_T_BDS_DATAMININGPOINT" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGPOINT" name="OUT_T_BDS_DATAMININGPOINT"
+				camel_alias="OUT_T_BDS_DATAMININGPOINT" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SOUMLMODELCASE" description="更新或者新增模型实例"
+		class_id="SOUMLMODELCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL_CASE" name="IN_T_BDS_MLMODEL_CASE"
+				camel_alias="IN_T_BDS_MLMODEL_CASE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUDATAMININGFLOWHISTORY" description="更新或者新增数据处理流程实例"
+		class_id="SOUDATAMININGFLOWHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_T_BDS_DATAMININGFLOWHISTORY"
+				camel_alias="IN_T_BDS_DATAMININGFLOWHISTORY" num_min="1" num_max="1"
+				datatype="TAB" />
+			<param id="Text" name="IN_CLOB" camel_alias="IN_CLOB" num_min="1"
+				num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUDATAMININGPOINTHISTORY" description="更新或者新增数据处理节点历史信息"
+		class_id="SOUDATAMININGPOINTHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGPOINT_HISTORY" name="IN_T_BDS_DATAMININGPOINTHISTORY"
+				camel_alias="IN_T_BDS_DATAMININGPOINTHISTORY" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUMODELPOINTCASE" description="更新或者新增模型节点实例"
+		class_id="SOUMODELPOINTCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MODELPOINT_CASE" name="IN_T_BDS_MODELPOINT_CASE"
+				camel_alias="IN_T_BDS_MODELPOINT_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.HISTORYCLOB" description="查询FLOWHISTORY中的大字段"
+		class_id="HISTORYCLOBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_CLOB" camel_alias="OUT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SOUMLPOINTCASE" description="更新或新增模型节点实例"
+		class_id="SOUMLPOINTCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLPOINT_CASE" name="IN_T_BDS_MLPOINT_CASE"
+				camel_alias="IN_T_BDS_MLPOINT_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SOUMLFLOWCASE" description="更新或者新增模型流程实例"
+		class_id="SOUMLFLOWCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLFLOW_CASE" name="IN_T_BDS_MLFLOW_CASE"
+				camel_alias="IN_T_BDS_MLFLOW_CASE" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SFRWLIST" description="算法任务列表"
+		class_id="SFRWLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFRW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFRW" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+
+	<service id="BDS.ZT.SFRWSLIST" description="建模任务清单"
+		class_id="SFRWSLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ADDR_ANALYZER" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="ADDR_ANALYZER" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+
+	<service id="BDS.ZT.CXXLIST" description="算法任务列表"
+		class_id="CXXLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_CXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_CXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.CXXT" description="查询cxx中的特殊sql"
+		class_id="CXXTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_CXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_CXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.RP" description="加载R图片"
+		class_id="RPService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_JLXX" name="IN_BDS_DRAWSERVLET" camel_alias="IN_BDS_DRAWSERVLET"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_BDS_DRAWSERVLET" camel_alias="OUT_BDS_DRAWSERVLET"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.WJMXLIST" description="挖掘模型列表"
+		class_id="WJMXLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_WJMX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_WJMX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.UPDATEWJMX" description="更新wjmx"
+		class_id="UPDATEWJMXService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_WJMX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SAVEWJRW" description="保存SAVEWJRW"
+		class_id="SAVEWJRWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_WJRW" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SFGL" description="多表关联查询"
+		class_id="SFGLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.KPF" description="算法包中查询K评分"
+		class_id="KPFService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="JLZS_KPFXX" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="JLZS_KPFXX" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELDATAMININGFLOW" description="删除数据处理流程"
+		class_id="DELDATAMININGFLOWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW" name="IN_XT_I_SERVICE"
+				camel_alias="IN_XT_I_SERVICE" num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.SJYZDB" description="查询sjyzd全部"
+		class_id="SJYZDBService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SJYZD" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DSJWJ_SJYZD" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELSFRW" description="删除SFRW"
+		class_id="DELSFRWService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DSJWJ_SFRW" name="IN_XT_I_SERVICE" camel_alias="IN_XT_I_SERVICE"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+
+	<service id="BDS.ZT.DELSFRWS" description="删除SFRWS"
+		class_id="DELSFRWSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="ADDR_ANALYZER" name="IN_XT_I_SERVICE" camel_alias="IN_XT_I_SERVICE"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+
+	<service id="BDS.ZT.COLCT" description="查询字段类型"
+		class_id="COLCTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_RESOURCELIB" name="IN_BDS_ZT" camel_alias="IN_BDS_ZT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_RESOURCELIB" name="OUT_BDS_ZT" camel_alias="OUT_BDS_ZT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXINS" description="添加聚类算法任务"
+		class_id="QDJLRWXXINSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXINS" camel_alias="IN_BDS_QDJLRWXXINS"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXUPD" description="修改聚类算法任务"
+		class_id="QDJLRWXXUPDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXUPD" camel_alias="IN_BDS_QDJLRWXXUPD"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXSEL" description="查询聚类算法任务"
+		class_id="QDJLRWXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXSEL" camel_alias="IN_BDS_QDJLRWXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_RWXX" name="OUT_BDS_QDJLRWXXSEL" camel_alias="OUT_BDS_QDJLRWXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXLIST" description="聚类算法任务列表"
+		class_id="QDJLRWXXLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXLIST" camel_alias="IN_BDS_QDJLRWXXLIST"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_RWXX" name="OUT_BDS_QDJLRWXXLIST" camel_alias="OUT_BDS_QDJLRWXXLIST"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLRWXXDEL" description="删除聚类算法任务"
+		class_id="QDJLRWXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_RWXX" name="IN_BDS_QDJLRWXXDEL" camel_alias="IN_BDS_QDJLRWXXDEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLKPFXXDEL" description="删除K评分信息"
+		class_id="QDJLKPFXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJL_KPFXX" name="IN_BDS_QDJLKPFXXDEL" camel_alias="IN_BDS_QDJLKPFXXDEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLCXXDEL" description="删除簇信息"
+		class_id="QDJLCXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_CXX" name="IN_BDS_QDJLCXXDEL" camel_alias="IN_BDS_QDJLCXXDEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLJLXXDEL" description="删除聚类展示信息"
+		class_id="QDJLJLXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLXX" name="IN_BDS_QDJLJLXXDEL" camel_alias="IN_BDS_QDJLJLXXDEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLJLXXSEL" description="查询聚类展示信息"
+		class_id="QDJLJLXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLXX" name="IN_BDS_QDJLJLXXSEL" camel_alias="IN_BDS_QDJLJLXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_JLXX" name="OUT_BDS_QDJLJLXXSEL" camel_alias="OUT_BDS_QDJLJLXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLCXXSEL" description="查询簇信息"
+		class_id="QDJLCXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_CXX" name="IN_BDS_QDJLCXXSEL" camel_alias="IN_BDS_QDJLCXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_CXX" name="OUT_BDS_QDJLCXXSEL" camel_alias="OUT_BDS_QDJLCXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLCXXSELCTZ" description="查询簇特征"
+		class_id="QDJLCXXSELCTZService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_CXX" name="IN_BDS_QDJLCXXSELCTZ" camel_alias="IN_BDS_QDJLCXXSELCTZ"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_BDS_QDJLCXXSELCTZ" camel_alias="OUT_BDS_QDJLCXXSELCTZ"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLCXXUPD" description="修改特征曲线图"
+		class_id="QDJLCXXUPDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_CXX" name="IN_BDS_QDJLCXXUPD" camel_alias="IN_BDS_QDJLCXXUPD"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_TZQXT" camel_alias="IN_BDS_TZQXT"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.QDJLJLXXUPD" description="修改簇中心星图"
+		class_id="QDJLJLXXUPDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_JLXX" name="IN_BDS_QDJLJLXXUPD" camel_alias="IN_BDS_QDJLJLXXUPD"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="Text" name="IN_BDS_CZXXT" camel_alias="IN_BDS_CZXXT"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DRAWSERVLET" description="生成图片"
+		class_id="DRAWSERVLETService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJL_JLXX" name="IN_BDS_DRAWSERVLET" camel_alias="IN_BDS_DRAWSERVLET"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_BDS_DRAWSERVLET" camel_alias="OUT_BDS_DRAWSERVLET"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.QDJLKPFXXSEL" description="查询k评分信息"
+		class_id="QDJLKPFXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="QDJL_KPFXX" name="IN_BDS_QDJLKPFXXSEL" camel_alias="IN_BDS_QDJLKPFXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="QDJL_KPFXX" name="OUT_BDS_QDJLKPFXXSEL" camel_alias="OUT_BDS_QDJLKPFXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DFYCRWXXLIST" description="电费异常任务列表"
+		class_id="DFYCRWXXLISTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_RWXX" name="IN_BDS_DFYCRWXXLIST" camel_alias="IN_BDS_DFYCRWXXLIST"
+				num_min="1" num_max="1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DFYC_RWXX" name="OUT_BDS_DFYCRWXXLIST" camel_alias="OUT_BDS_DFYCRWXXLIST"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="SYS_PAGE" name="SYS_PAGE" camel_alias="SYS_PAGE"
+				num_min="1" num_max="1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DFYCRWXXDEL" description="删除电费异常任务"
+		class_id="DFYCRWXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_RWXX" name="IN_BDS_DFYCRWXXDEL" camel_alias="IN_BDS_DFYCRWXXDEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DFYCKHXXLSDEL" description="删除异常客户信息"
+		class_id="DFYCKHXXLSDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_KHXX_LS" name="IN_BDS_DFYCKHXXLSDEL"
+				camel_alias="IN_BDS_DFYCKHXXLSDEL" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DFYCCXXDEL" description="删除异常分析簇信息"
+		class_id="DFYCCXXDELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_CXX" name="IN_BDS_DFYCCXXDEL" camel_alias="IN_BDS_DFYCCXXDEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DFYCRWXXINS" description="添加电费异常算法任务"
+		class_id="DFYCRWXXINSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_RWXX" name="IN_BDS_DFYCRWXXINS" camel_alias="IN_BDS_DFYCRWXXINS"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DFYCRWXXUPD" description="修改电费异常算法任务"
+		class_id="DFYCRWXXUPDService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_RWXX" name="IN_BDS_DFYCRWXXUPD" camel_alias="IN_BDS_DFYCRWXXUPD"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.DFYCCXXSEL" description="查询异常分析簇信息"
+		class_id="DFYCCXXSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_CXX" name="IN_BDS_DFYCCXXSEL" camel_alias="IN_BDS_DFYCCXXSEL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DFYC_CXX" name="OUT_BDS_DFYCCXXSEL" camel_alias="OUT_BDS_DFYCCXXSEL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DFYCKHXXLSSEL" description="查询异常客户信息"
+		class_id="DFYCKHXXLSSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="DFYC_KHXX_LS" name="IN_BDS_DFYCKHXXLSSEL"
+				camel_alias="IN_BDS_DFYCKHXXLSSEL" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="DFYC_KHXX_LS" name="OUT_BDS_DFYCKHXXLSSEL"
+				camel_alias="OUT_BDS_DFYCKHXXLSSEL" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.SMLPOINTS" description="查找流程特定内容"
+		class_id="SMLPOINTSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLPOINT" name="IN_T_BDS_MLPOINT" camel_alias="IN_T_BDS_MLPOINT"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLPOINT" name="OUT_T_BDS_MLPOINT" camel_alias="OUT_T_BDS_MLPOINT"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.FINDMODELCASE" description="寻找K评分模型实例"
+		class_id="FINDMODELCASEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_MLMODEL_CASE" name="IN_T_BDS_MLMODEL_CASE"
+				camel_alias="IN_T_BDS_MLMODEL_CASE" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_MLMODEL_CASE" name="OUT_T_BDS_MLMODEL_CASE"
+				camel_alias="OUT_T_BDS_MLMODEL_CASE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGZEPPELIN" description="Zeppelin参数查询"
+		class_id="DATAMININGZEPPELINService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGZEPPELIN" name="IN_T_BDS_DATAMININGZEPPELIN"
+				camel_alias="IN_T_BDS_DATAMININGZEPPELIN" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGZEPPELIN" name="OUT_T_BDS_DATAMININGZEPPELIN"
+				camel_alias="OUT_T_BDS_DATAMININGZEPPELIN" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DATAMININGZEPPELININSERT" description="插入Zeppelin参数查询"
+		class_id="DATAMININGZEPPELININSERTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGZEPPELIN" name="IN_T_BDS_DATAMININGZEPPELININSERT"
+				camel_alias="IN_T_BDS_DATAMININGZEPPELININSERT" num_min="1" num_max="1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.FINDDATAMININGFLOWHISTORY" description="查询相关数据流程实例"
+		class_id="FINDDATAMININGFLOWHISTORYService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="IN_BDS_ZT"
+				camel_alias="IN_BDS_ZT" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="T_BDS_DATAMININGFLOW_HISTORY" name="OUT_BDS_ZT"
+				camel_alias="OUT_BDS_ZT" num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXTZ" description="台区画像特征信息查询"
+		class_id="XSFXTQHXTZService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXTZ" name="IN_XSFX_TQHXTZ" camel_alias="IN_XSFX_TQHXTZ"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQHXTZ" name="OUT_XSFX_TQHXTZ" camel_alias="OUT_XSFX_TQHXTZ"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXINS" description="插入台区画像"
+		class_id="XSFXTQHXINSService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHX" name="IN_BDS_XSFXTQHXINS" camel_alias="IN_BDS_XSFXTQHXINS"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXTZUPDATE" description="台区画像特征更新"
+		class_id="XSFXTQHXTZUPDATEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXTZ" name="IN_BDS_XSFXTQHXTZUPDATE"
+				camel_alias="IN_BDS_XSFXTQHXTZUPDATE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXCXXUPDATE" description="台区画像特征更新"
+		class_id="XSFXCXXUPDATEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_CXX" name="IN_BDS_XSFXCXXUPDATE" camel_alias="IN_BDS_XSFXCXXUPDATE"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXUPDATE" description="画像编号信息更新"
+		class_id="XSFXTQHXUPDATEService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXYCTQ" name="IN_XSFX_TQHXYCTQ" camel_alias="IN_XSFX_TQHXYCTQ"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="XSFX_TQHXYCFXFF" name="IN_XSFX_TQHXYCFXFF"
+				camel_alias="IN_XSFX_TQHXYCFXFF" num_min="0" num_max="-1" datatype="TAB" />
+			<param id="XSFX_TQHXTZ" name="IN_XSFX_TQHXTZ" camel_alias="IN_XSFX_TQHXTZ"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="XSFX_CXX" name="IN_XSFX_CXX" camel_alias="IN_XSFX_CXX"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="XSFX_TQHX" name="IN_XSFX_TQHX" camel_alias="IN_XSFX_TQHX"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXBQFLSEL" description="画像属性标签分类查询"
+		class_id="XSFXBQFLService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_BQFL" name="IN_XSFX_BQFL" camel_alias="IN_XSFX_BQFL"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_BQFL" name="OUT_XSFX_BQFL" camel_alias="OUT_XSFX_BQFL"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXTZTZKSHZ" description="查询画像特征可视化值"
+		class_id="XSFXTQHXTZKZHZService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXTZ" name="IN_XSFX_TQHXTZTZKSHZ"
+				camel_alias="IN_XSFX_TQHXTZTZKSHZ" num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_XSFX_TQHXTZTZKSHZ" camel_alias="OUT_XSFX_TQHXTZTZKSHZ"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.XSFX.TQHXBQNR" description="更新台区画像标签内容"
+		class_id="TQHXBQNRService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHX" name="IN_XSFXTQHX_BQNR" camel_alias="IN_XSFXTQHX_BQNR"
+				num_min="0" num_max="-1" datatype="TAB" />
+			<param id="Text" name="IN_XSFXTQHX_BQNR_CLOB" camel_alias="IN_XSFXTQHX_BQNR_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.XSFXTQHXBQNR" description="查询画像标签内容"
+		class_id="XSFXTQHXBQNRService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHX" name="IN_XSFX_TQHXBQNR" camel_alias="IN_XSFX_TQHXBQNR"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="Text" name="OUT_XSFX_TQHXBQNR" camel_alias="OUT_XSFX_TQHXBQNR"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</output>
+	</service>
+	<service id="BDS.ZT.DELETEXSFXTQHXTZ" description="删除台区画像特征"
+		class_id="DELETETQHXTZService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXTZ" name="IN_XSFX_TQHXTZ_DELETE"
+				camel_alias="IN_XSFX_TQHXTZ_DELETE" num_min="0" num_max="-1"
+				datatype="TAB" />
+		</input>
+	</service>
+	<service id="BDS.XSFX.TQHXTZINSERT" description="插入台区画像特征"
+		class_id="TQHXTZINSERTService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXTZ" name="IN_XSFXTQHXTZ_INSERT"
+				camel_alias="IN_XSFXTQHXTZ_INSERT" num_min="0" num_max="-1"
+				datatype="TAB" />
+			<param id="Text" name="IN_XSFXTQHXTZ_INSERT_CLOB" camel_alias="IN_XSFXTQHXTZ_INSERT_CLOB"
+				num_min="1" num_max="1" datatype="SIMPLE" />
+		</input>
+	</service>
+	<service id="BDS.ZT.VTXSFXTQHXYCTQ" description="台区画像特征查询"
+		class_id="VTTQHXYCTQSELService!com.haiyisoft.service.IBusinessService">
+		<input>
+			<param id="XSFX_TQHXYCTQ" name="IN_XSFX_YCTQ" camel_alias="IN_XSFX_YCTQ"
+				num_min="1" num_max="1" datatype="TAB" />
+		</input>
+		<output>
+			<param id="XSFX_TQHXYCTQ" name="OUT_XSFX_YCTQ" camel_alias="OUT_XSFX_YCTQ"
+				num_min="0" num_max="-1" datatype="TAB" />
+		</output>
+	</service>
+</application>
